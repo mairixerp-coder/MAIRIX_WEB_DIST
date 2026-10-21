@@ -1,1 +1,0 @@
-import{b as a}from"./index-vu_WeVXu.js";function l(c,o){const t=`mairix.draft.${c}`,[r,s]=a.useState(()=>{try{const e=localStorage.getItem(t);return e?JSON.parse(e):o}catch{return o}});return a.useEffect(()=>{const e=window.setTimeout(()=>{localStorage.setItem(t,JSON.stringify(r))},300);return()=>window.clearTimeout(e)},[t,r]),[r,s,()=>localStorage.removeItem(t)]}export{l as u};
